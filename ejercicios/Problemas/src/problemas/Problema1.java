@@ -10,10 +10,6 @@ package problemas;
  * @author reroes
  */
 public class Problema1 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
         imprimirDatos(informacion);
@@ -25,13 +21,11 @@ public class Problema1 {
             for (int j = 0; j < datos[i].length; j++) {
                 // Verificamos si el elemento es par
                 if (datos[i][j] % 2 == 0) {
-                    // Imprimimos el elemento
+                    
                     System.out.println(datos[i][j]);
                 }
             }
         }
     }
 }
-}
 
-}
