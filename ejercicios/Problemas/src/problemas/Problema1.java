@@ -20,7 +20,18 @@ public class Problema1 {
     }
 
     public static void imprimirDatos(int[][] datos) {
-
+        // Recorremos el arreglo bidimensional
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos[i].length; j++) {
+                // Verificamos si el elemento es par
+                if (datos[i][j] % 2 == 0) {
+                    // Imprimimos el elemento
+                    System.out.println(datos[i][j]);
+                }
+            }
+        }
     }
+}
+}
 
 }

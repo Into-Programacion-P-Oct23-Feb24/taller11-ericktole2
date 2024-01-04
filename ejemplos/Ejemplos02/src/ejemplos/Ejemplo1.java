@@ -17,30 +17,28 @@ public class Ejemplo1 {
     public static void main(String[] args) {
         // 
         int[] informacion = {10, 20, 30, 40, 50, 100};
-        
+
         // int suma = obtenerSumaDatos(10);
         int sum = obtenerSumaDatos(informacion);
         double promedio = obtenerPromedioDatos(informacion);
-        System.out.printf("La suma es %d\n", sum);
-        System.out.printf("El promedio es %.2f\n", promedio);
+        System.out.printf("La suma es %d\nEl promedio es %.2f\n", sum,
+                 promedio);
+        // System.out.printf("El promedio es %.2f\n", promedio);
     }
-    
-    public static int obtenerSumaDatos(int [] d){
+
+    public static int obtenerSumaDatos(int[] d) {
         int suma = 0;
         for (int i = 0; i < d.length; i++) {
-            suma = suma + d[i];
+            suma += d[i];
         }
         return suma;
     }
-    
-    public static double obtenerPromedioDatos(int [] datos){
-        int suma = 0;
+
+    public static double obtenerPromedioDatos(int[] datos) {
+        double suma = obtenerSumaDatos(datos);
         double promedio;
-        for (int i = 0; i < datos.length; i++) {
-            suma = suma + datos[i];
-        }
-        promedio = (double)suma/datos.length;
+        promedio = suma / datos.length;
         return promedio;
     }
-    
+
 }
